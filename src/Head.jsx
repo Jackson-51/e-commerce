@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import Nav1 from "./nav";
+import Nav1 from "./Nav";
 
 const Head = ({darkMode, setDarkMode}) => {
     const links = ["Technology", "Company", "Commercial", "Blog", "Shop"];

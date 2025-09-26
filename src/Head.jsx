@@ -56,7 +56,7 @@ const Head = ({darkMode, setDarkMode}) => {
                             <div key={i}>{lang}</div>                            
                         ))}
                     </div>
-                    <div className="cart"><p>cart</p><img src="icon.svg" alt="" /></div>
+                    <div className="cart"><p>cart</p><img src="/icon.svg" alt="" /></div>
                     <aside onClick={() => { setScreenSwitch(!screenSwitch); setDarkMode(!darkMode) } }>
                         <motion.i 
                         className={screenSwitch ? 'fa-solid fa-moon' : 'fa-solid fa-circle'}
@@ -74,7 +74,7 @@ const Head = ({darkMode, setDarkMode}) => {
 
     return ( 
         <div className="section1">
-            <img src="img1.png" alt="" />
+            <img src="/img1.png" alt="" />
             {navContent}
             <div className="foot">
                 <small>Silence the World. Your Sanctuary of Sound.</small>

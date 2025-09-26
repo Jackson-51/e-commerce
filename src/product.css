@@ -6,7 +6,7 @@ box-sizing: border-box;
 section{
     width: 90%;
     height: 90vh;
-    background-image: url(blurry_bg.svg);
+    background-image: url(/blurry_bg.svg);
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 3em;

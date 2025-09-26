@@ -34,7 +34,7 @@ const Inter = () => {
                     animate={inView2?{y: 0, opacity: 1}:{}}
                     transition={{duration: 0.6, delay: (0.25 * i)}}
                     >
-                        <div className="img-carrier"><img src={cap[0]} alt="" /></div>
+                        <div className="img-carrier"><img src={`/${cap[0]}`} alt="" /></div>
                         <small>{cap[1]}</small>
                         <span><div className="circle"></div>{cap[2]}</span>
                     </motion.div>

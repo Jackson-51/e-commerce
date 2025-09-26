@@ -13,7 +13,7 @@ const Product = () => {
                 <b>Meet Oraimo</b>, the ultimate wearable audio device powered by smart technology. 
                  Experience next-level comfort and performance designed to support your lifestyle, fitness, and daily productivity.
             </p>
-            <motion.img src="headphone.png" alt="hphone" 
+            <motion.img src="/headphone.png" alt="hphone" 
                 ref = {ref1}
                 style={{y: 10, opacity: 0}} 
                 initial={{y: 100, opacity: 0}} 

@@ -28,7 +28,7 @@ const Product = () => {
                 <p>Get the new Oraimo now</p>
                 <article>
                     <b>&#36; 100</b>
-                    <button>Buy now</button>
+                    <motion.button whileTap={{scale: 0.8}} transition={{duration: 0.1}}>Buy now</motion.button>
                 </article>
             </motion.div>
         </section>

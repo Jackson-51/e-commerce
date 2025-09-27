@@ -69,7 +69,7 @@ const Head = ({darkMode, setDarkMode}) => {
             </div>
         );
     } else {
-        navContent = <Nav1 screenSwitch={screenSwitch} setScreenSwitch={setScreenSwitch} links={links} lang={lang} />;
+        navContent = <Nav1 screenSwitch={screenSwitch} setScreenSwitch={setScreenSwitch} links={links} lang={lang} darkMode={darkMode} setDarkMode={setDarkMode} />;
     }
 
     return ( 

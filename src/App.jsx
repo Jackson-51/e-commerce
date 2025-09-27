@@ -3,6 +3,7 @@ import "./App.css"
 import Head from "./Head";
 import Inter from "./Inter";
 import Product from "./product";
+import Specification from "./Spec";
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -11,6 +12,7 @@ const App = () => {
       <Head darkMode = {darkMode} setDarkMode ={setDarkMode} />
       <Inter /> 
       <Product />
+      <Specification />
     </div>
    );
 }

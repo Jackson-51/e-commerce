@@ -1,7 +1,7 @@
 import { animate, motion } from "framer-motion"
 import { useState } from "react";
 
-const Nav1 = ({screenSwitch, setScreenSwitch, links, lang}) => {
+const Nav1 = ({screenSwitch, setScreenSwitch, links, lang, darkMode, setDarkMode}) => {
     const center = {display:"flex", gap: "10px", alignItems: "center"};
     const [slideBool, setSlideBool] = useState(false);
     const [Lname, setLname] = useState("EN");
@@ -14,7 +14,7 @@ const Nav1 = ({screenSwitch, setScreenSwitch, links, lang}) => {
                     <i className="fa-solid fa-headphones"></i>
                     <h2>Oraimo</h2>
                 </div>
-                <aside onClick={() => setScreenSwitch(!screenSwitch)}>
+                <aside onClick={() => { setScreenSwitch(!screenSwitch); setDarkMode(!darkMode)}}>
                     <motion.i 
                     className={screenSwitch ? 'fa-solid fa-moon' : 'fa-solid fa-circle'}
                     initial={{x: 0}}

@@ -1,0 +1,93 @@
+.section4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Changed from 100vh to 100vw */
+    min-height: 90vh; /* Use min-height for better responsiveness */
+}
+
+.section4 .specification{
+    width: 100%;
+    min-height: 90vh; /* Use min-height instead of height */
+    overflow: hidden;
+    margin-block: 4rem; /* Use rem for consistency */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:4rem;
+}
+.specification header{
+    text-align: center;
+    color: white;
+}
+.oraimo.light .section4 .specification header{
+    color: #000000d5;
+}
+.oraimo.light .section4 .specification header small{
+    color: #0000009f;
+}
+header h1{
+    font-size: clamp(20px, 1rem,3em);
+}
+header small{
+    font-size: 13px;
+    color: #ffffffa6;
+}
+.specification article{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100vw; /* Changed from 100vh to 100vw */
+    gap: 20px;
+    padding:0 5em;
+    @media (max-width: 768px){
+      grid-template-columns: 1fr;
+      padding: 10px;
+    }
+}
+article .bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/bg2.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    position: relative;
+}
+
+.bg img{
+    width: 90%;
+    cursor: pointer;
+}
+
+article aside{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(32, 32, 32);
+    border-radius: 30px;
+}
+
+article aside ul{
+    width:100%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #585858a6;
+}
+article aside ul > li{
+    list-style: none;
+}
+article aside ul > li{
+    font-size: 13px;
+    @media (max-width:768px) {
+        font-size: 13px;
+    }
+}
+
+ul li p{
+    color:#ffffffa6;
+}

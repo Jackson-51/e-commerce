@@ -31,7 +31,7 @@ font-family: 'Poppins', sans-serif;
   position: relative;
   border-radius: 30px;
   @media (max-width:768px) {
-    height: 70vh;
+    height: 485px;
   }
 }
 
@@ -107,7 +107,7 @@ font-family: 'Poppins', sans-serif;
   align-items: center;
   gap: 5px;
 }
-.right aside, aside{
+.right > aside, nav aside{
   width:3em;
   height: 25px;
   border-radius: 50px;
@@ -147,7 +147,7 @@ nav .sidebar{
   width: 15em;
   overflow: hidden;
 }
-.sidebar ul{
+.sidebar > ul{
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -155,7 +155,7 @@ nav .sidebar{
 .sidebar ul > *{
   width: 100%;
 }
-.sidebar ul.links li{
+.sidebar > ul.links li{
   padding: 10px;
   list-style:disc inside;
   font-size:14px;
